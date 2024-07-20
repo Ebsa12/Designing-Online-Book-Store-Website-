@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <br /><br /><title>A Book Reviews</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+  
+</div>
+    
+<div id="addBook"></div>
+        <h1>A Book Reviews</h1>
+
+       
+
+        <h1>Welcome to our a Book Riview page</h2>
+
+            <div>
+                <div class="book-container">
+                    <img src="{{ url_for('static', filename="Book1.JPG") }}"width="{{ 140 }}" height="{{ 140}}" />
+                    
+
+                    <img src="{{ url_for('static', filename="Book2.JPG") }}"width="{{ 140 }}" height="{{ 140}}" />
+                        
+
+                        <img src="{{ url_for('static', filename="Book3.JPG") }}"width="{{ 140 }}" height="{{ 140}}" />
+                        
+
+                        <img src="{{ url_for('static', filename="Book4.JPG") }}"width="{{ 140 }}" height="{{ 140}}" />
+                        <
+
+                        <img src="{{ url_for('static', filename="Book5.JPG") }}"width="{{ 140 }}" height="{{ 140}}" />
+                        
+                  </div> 
+                  
+
+
+    <div id="addBook">
+        <h2>Add a Book</h2>
+        <input type="text" id="bookTitle" placeholder="Book Title">
+        <br /><br />
+        <input type="text" id="publicationYear" placeholder="Publication Year">
+        <br /><br />
+        <button onclick="addBook()">Add</button>
+    
+    </div>
+    <br /><br />
+    <div id="searchBox">
+        
+        <h2>Search</h2>
+        <input type="text" id="searchText" placeholder="Enter Book Title">
+        <br /><br />
+        <button onclick="searchBooks()">Search</button>
+    </div>
+    <br /><br />
+    <div id="searchBox">
+
+          
+    </div>
+
+    <div id="bookList">
+        <!-- Book data will be displayed here dynamically -->
+    </div>
+
+    <button id="showBooksButton" onclick="showAllBooks()">Show All Books</button>
+    
+    <div id="allbooks">
+        
+        <!-- Book data will be displayed here dynamically -->
+    </div>
+    <br /><br />
+    </div>
+    <def class="sidenav">
+        <a href=""#">About us</a>
+        
+        <a href=""#">Quick help</a>
+        
+        <a href=""#">HOME</a>
+
+    </div>
+    </def>
+    
+  
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
